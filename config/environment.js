@@ -37,6 +37,15 @@ module.exports = function(environment) {
     ENV.APP.LOG_VIEW_LOOKUPS = false;
 
     ENV.APP.rootElement = '#ember-testing';
+    ENV.contentSecurityPolicy = {
+      'default-src': "'none'",
+      'script-src': "'unsafe-eval'",
+      'font-src': "'self' http://fonts.gstatic.com",
+      'connect-src': "'self'",
+      'img-src': "'self'",
+      'style-src': "'self' 'unsafe-inline' https://fonts.googleapis.com",
+      'media-src': "'self'"
+     }
   }
 
   if (environment === 'production') {
