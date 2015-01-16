@@ -152,12 +152,12 @@ label {
   vertical-align: middle;
 }
 .logo-globe {
+  background: url(images/logo-globe.png) no-repeat 0 0;
   margin-top: -25px;
-  padding: 0px 10px 0px 0px;
-  content: url(images/logo-globe.png) no-repeat 0 0;
+  padding: 20px 10px 0px 0px;
 }
 .logo-globe:hover {
-  content: url(images/logo-globe-hover.png) no-repeat 0 0;
+  background: url(images/logo-globe-hover.png) no-repeat 0 0;
 }
 .navbar-toggle {
   background-color: black !important;
