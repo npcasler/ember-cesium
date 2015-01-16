@@ -4,7 +4,7 @@ module.exports = function(environment) {
   var ENV = {
     modulePrefix: 'ember-cesium',
     environment: environment,
-    baseURL: '/',
+    baseURL: '/ember-cesium/',
     locationType: 'auto',
     EmberENV: {
       FEATURES: {
@@ -37,7 +37,7 @@ module.exports = function(environment) {
     ENV.APP.LOG_VIEW_LOOKUPS = false;
 
     ENV.APP.rootElement = '#ember-testing';
-    ENV.contentSecurityPolicy = {
+    /*ENV.contentSecurityPolicy = {
       'default-src': "'none'",
       'script-src': "'unsafe-eval'",
       'font-src': "'self' http://fonts.gstatic.com",
@@ -45,7 +45,7 @@ module.exports = function(environment) {
       'img-src': "'self'",
       'style-src': "'self' 'unsafe-inline' https://fonts.googleapis.com",
       'media-src': "'self'"
-     }
+     }*/
   }
 
   if (environment === 'production') {

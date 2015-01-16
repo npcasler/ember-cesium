@@ -82,11 +82,12 @@ export default Ember.Controller.extend({
   removeLayers: function() {
     //Clear old layers before adding new ones
     console.log('Remove layers called');
-    for (var i = 0; i < this.get('years').length; i++){
+    for (var i = this.get('years').length -1; i > 0; i--){
       var year = this.get('years')[i];
       console.log('year is ' + year);
-      var layer = this.get('imageryLayers').get(year);
-      this.get('imageryLayers').remove(layer, 1);
+      var layer = this.get('imageryLayers').get(year)
+      console.log("Layer is "+ layer);
+      this.get('imageryLayers').remove(layer);
       console.log(this.get('imageryLayers'));
     }
   },
