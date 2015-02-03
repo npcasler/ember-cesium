@@ -56,6 +56,9 @@ html, body {
 .double-height {
   height: 150%
 }
+.full-width {
+  width: 100%;
+}
 /*.full {
   height: 100%;
   width: 100%;
@@ -284,6 +287,9 @@ label {
   text-align: center;
   padding: 20%;
   min-height: 100%;
+}
+.welcome-content {
+  padding-top: 175px;
 }
 
 //for parallax scrolling 
