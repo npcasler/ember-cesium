@@ -1,6 +1,9 @@
 <nav class="navbar navbar-simple navbar-fixed-top">
   <div class="container-fluid full">
     <!-- Brand and toggle get grouped for better mobile display -->
+    
+    <div id="header-left" class="col-md-5">
+
       <div class="navbar-header">
         <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1">
           <span class="sr-only">Toggle navigation</span>
@@ -9,20 +12,43 @@
           <span class="icon-bar"></span>
         </button>
       {{#link-to "cesium" tagName="a" class="navbar-brand"}}<div class="logo-globe"></div>{{/link-to}}
-      </div> 
-      <!-- Collect the nav links, forms, and other content for toggling -->
-      <div id="breadcrumbs" class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+    <!-- responsive -->
+        <div id="navbar-brand-collapsed">
+          {{#link-to "welcome" class="navbar-brand"}}Forest Forecasts{{/link-to}}
+        </div>
+
+      </div>
+            <!-- Collect the nav links, forms, and other content for toggling -->
+      <div id="navContainer" class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
         <ul class="nav navbar-nav">
-          {{#link-to "" class="navbar-brand"}}Forest Forecasts{{/link-to}} 
+          {{#link-to "welcome" tagName="li" class="navbar-brand navbar-hide"}}Forest Forecasts{{/link-to}} 
         </ul>
         
+        {{!--
+        <!-- breadcrumbs -->
+        <div id="breadcrumbs"> 
         <ul id="main-menu" class="nav navbar-nav navbar-right">
           {{#link-to "" tagName="li"}}Lost<br>Services{{/link-to}}
           {{#link-to "" tagName="li"}}Forest<br>Loss{{/link-to}}
           {{#link-to "" tagName="li"}}Forest<br>Change{{/link-to}}
         </ul>
-       
+       </div>
+      <!--/breadcrumbs-->
+        --}}
       </div>
+      </div><!--/header-left-->
+      <!-- testing -->
+      <div id="header-right">
+      <div class="collapse navbar-collapse breadcrumbs" id="bs-example-navbar-collapse-1">
+      <ul class="nav navbar-nav navbar-right">
+      {{#link-to "" tagName="li"}}Lost<br> Services{{/link-to}}
+      {{#link-to "" tagName="li"}}Forest<br> Loss{{/link-to}}
+      {{#link-to "" tagName="li"}} Forest<br> Change{{/link-to}}
+      </ul>
+      </div><!-- /.navbar-collapse -->
+      </div><!-- /header-right-->
+
+
   </div>
 </nav>
 
