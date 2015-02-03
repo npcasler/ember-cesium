@@ -4,7 +4,7 @@ module.exports = function(environment) {
   var ENV = {
     modulePrefix: 'ember-cesium',
     environment: environment,
-    baseURL: '/ember-cesium/',
+    baseURL: '/',
     locationType: 'auto',
     EmberENV: {
       FEATURES: {
